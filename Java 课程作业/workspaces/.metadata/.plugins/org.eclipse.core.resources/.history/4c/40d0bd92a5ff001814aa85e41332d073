@@ -1,0 +1,37 @@
+
+
+/**  
+* @Title: scoreAnalysis.java  
+* @Package   
+* @Description: TODO  
+* @author:小豪
+* @date 2018年12月14日  
+* @version V1.8
+*/
+
+/**  
+* @ClassName: scoreAnalysis  
+* @Description: TODO
+* @author 小豪  
+* @date 2018年12月14日  
+*    
+*/
+import java.io.*;
+public class scoreAnalysis {
+	public static void main(String args[]) {
+		
+	}
+	public void scoreAna() {
+		File scoreFile = null;
+		FileReader in = null;
+		
+		try {
+			scoreFile = new File("./src/scoreAnalysis.txt");
+			in = new FileReader(scoreFile);
+		} catch (IOException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+	}
+}

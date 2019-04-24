@@ -1,0 +1,54 @@
+
+
+/**  
+* @Title: scoreAnalysis.java  
+* @Package   
+* @Description: TODO  
+* @author:小豪
+* @date 2018年12月14日  
+* @version V1.8
+*/
+
+/**  
+* @ClassName: scoreAnalysis  
+* @Description: TODO
+* @author 小豪  
+* @date 2018年12月14日  
+*    
+*/
+import java.io.*;
+public class scoreAnalysis {
+	public static void main(String args[]) {
+		scoreAna();
+	}
+	public static void scoreAna() {
+		File scoreFile = null;
+		BufferedReader in = null;
+		String line;
+		try {
+			scoreFile = new File("./src/","score.txt");
+			in = new BufferedReader(new FileReader(scoreFile));
+			while((line=in.readLine())!=null) {
+				System.out.println(line);
+				String str[] = line.split(" ");
+				int sum=0;
+				for(int i=2 ; i<str.length;i++) {
+					sum +=Integer.valueOf(str[i].substring(5, 6));
+					System.out.println(sum);
+				}
+			}
+			
+		} catch (IOException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally {
+			try {
+				in.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+}

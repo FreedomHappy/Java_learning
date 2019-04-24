@@ -1,0 +1,35 @@
+
+/**  
+* @Title: countWord.java  
+* @Package   
+* @Description: TODO  
+* @author:小豪
+* @date 2018年12月14日  
+* @version V1.8
+*/
+
+
+import java.io.*;
+import java.util.*;
+
+/**  
+* @ClassName: countWord  
+* @Description: TODO
+* @author 小豪  
+* @date 2018年12月14日  
+*    
+*/
+public class countWord {
+	public static void main(String args[]) {
+		File file = new File("./src/hello.txt");
+		Scanner sc = null;
+		try {
+			sc= new Scanner(file);
+			sc.useDelimiter(pattern);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

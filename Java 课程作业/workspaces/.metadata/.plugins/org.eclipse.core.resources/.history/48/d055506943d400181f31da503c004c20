@@ -1,0 +1,56 @@
+
+/**  
+* @Title: CheckBag.java  
+* @Package   
+* @Description: TODO  
+* @author 小豪  
+* @date 2018年10月20日  
+* @version V1.8
+*/
+
+/**  
+* @ClassName: CheckBag  
+* @Description: TODO
+* @author 小豪  
+* @date 2018年10月20日  
+*    
+*/
+public class CheckBag {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+abstract class Stuff{
+	abstract public String toString();
+}
+class Book extends Stuff{
+	String bookName;
+	String press;
+	@Override
+	public String toString() {
+		return bookName+'('+press+')';
+	}
+}
+
+class Cloth extends Stuff{
+	String brand;
+	String color;
+}
+
+class SchoolBag{
+	Stuff[] stuffs;
+	int size;
+	int currentSize;
+	public void putStuff(Stuff stuff) {
+		
+	}
+	public Stuff getStuff(int index) {
+		
+	}
+	public void printAllStuffs() {
+		
+	}
+}

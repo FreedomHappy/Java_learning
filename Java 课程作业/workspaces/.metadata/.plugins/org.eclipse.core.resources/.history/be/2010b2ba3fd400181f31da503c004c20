@@ -1,0 +1,28 @@
+
+/**  
+* @Title: CheckBag.java  
+* @Package   
+* @Description: TODO  
+* @author 小豪  
+* @date 2018年10月20日  
+* @version V1.8
+*/
+
+/**  
+* @ClassName: CheckBag  
+* @Description: TODO
+* @author 小豪  
+* @date 2018年10月20日  
+*    
+*/
+public class CheckBag {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

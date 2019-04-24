@@ -1,0 +1,22 @@
+
+/**  
+* @Title: scoreAnalysis.java  
+* @Package   
+* @Description: TODO  
+* @author:小豪
+* @date 2018年12月14日  
+* @version V1.8
+*/
+
+/**  
+* @ClassName: scoreAnalysis  
+* @Description: TODO
+* @author 小豪  
+* @date 2018年12月14日  
+*    
+*/
+public class scoreAnalysis {
+	public static void main(String args[]) {
+		
+	}
+}

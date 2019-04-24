@@ -1,0 +1,69 @@
+
+
+/**  
+* @Title: scoreAnalysis.java  
+* @Package   
+* @Description: TODO  
+* @author:小豪
+* @date 2018年12月14日  
+* @version V1.8
+*/
+
+/**  
+* @ClassName: scoreAnalysis  
+* @Description: TODO
+* @author 小豪  
+* @date 2018年12月14日  
+*    
+*/
+import java.io.*;
+public class scoreAnalysis {
+	public static void main(String args[]) {
+		scoreAna();
+	}
+	public static void scoreAna() {
+		File scoreFile = null;
+		File anaFile = null;
+		BufferedReader in = null;
+		PrintWriter out = null;
+		String line;
+		try {
+			scoreFile = new File("./src/score.txt");
+			anaFile = new File("./src/scoreAnalysis.txt");
+			if(!anaFile.exists()) {
+		         try {
+		              anaFile.createNewFile();
+		              System.out.println("创建成功在："+anaFile.getAbsolutePath().substring(0,anaFile.getAbsolutePath().lastIndexOf("\\")));
+		         }
+		         catch(IOException exp){}
+		      }
+			
+			out = new PrintWriter(anaFile);
+			in = new BufferedReader(new FileReader(scoreFile));
+			while((line=in.readLine())!=null) {
+				System.out.println(line);
+				String str[] = line.split(" ");
+				int sum=0;
+				for(int i=1 ; i<str.length;i++) {
+					sum +=Integer.valueOf(str[i].substring(2, 4));
+				}
+				line += "总分"+String.valueOf(sum)+"分。\n";
+				out.write(line);
+			}
+			
+		} catch (IOException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally {
+			try {
+				in.close();
+				out.flush();
+				out.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+}

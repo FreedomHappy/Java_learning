@@ -1,0 +1,87 @@
+
+/**  
+* @Title: CheckBag.java  
+* @Package   
+* @Description: TODO  
+* @author 小豪  
+* @date 2018年10月20日  
+* @version V1.8
+*/
+
+/**  
+* @ClassName: CheckBag  
+* @Description: TODO
+* @author 小豪  
+* @date 2018年10月20日  
+*    
+*/
+
+abstract class Stuff{
+	abstract public String toString();
+}
+class Book extends Stuff{
+	String bookName;
+	String press;
+	@Override
+	public String toString() {
+		return bookName+'('+press+')';
+	}
+}
+
+class Cloth extends Stuff{
+	String brand;
+	String color;
+	@Override
+	public String toString() {
+		return brand+'('+color+')';
+	}
+}
+
+abstract class Bag{
+	Stuff[] stuffs;
+	int size;
+	int currentSize;
+	Bag(){}
+	Bag(int s){
+		this.size = s;
+		this.stuffs = new Stuff[s];
+	}
+	abstract public void putStuff(Stuff stuff); 
+	 public Stuff getStuff(int index) {
+		
+	}
+	public void printAllStuffs() {
+		
+	}
+}
+public class CheckBag {
+
+	public static void main(String[] args) {
+		//create stuffs
+		Stuff[] stuffs = new Stuff[10];
+		for (int i=0; i<stuffs.length; i++) {
+			if(i%2==0) {
+				stuffs[i]=new Book("book"+i,"press"+i);
+			}
+			else {
+				stuffs[i]=new Book("Nike"+i,"color"+i);
+			}
+		}
+		//create two bags with size 5 and 4, respectively
+		Bag luggage = new luggage(5);
+		Bag schoolBag = new SchoolBag(4);
+		//put stuff into bags
+		for(int i=0; i<stuffs.length; i++) {
+			luggage.putStuff(stuffs[i]);
+			schoolBag.putStuff(stuffs[i]);
+		}
+		//get stuffs from bags
+		luggage.getStuff(0);
+		schoolBag.getStuff(1);
+		schoolBag.getStuff(5);
+		//pritn the stuffs from bags
+		luggage.printAllStuffs();
+		schoolBag.printAllStuffs();
+	}
+
+}

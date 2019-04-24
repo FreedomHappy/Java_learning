@@ -1,0 +1,29 @@
+
+/**  
+* @Title: countWord.java  
+* @Package   
+* @Description: TODO  
+* @author:小豪
+* @date 2018年12月14日  
+* @version V1.8
+*/
+
+
+import java.io.*;
+
+import com.sun.java_cup.internal.runtime.Scanner;
+import com.sun.java_cup.internal.runtime.Symbol;
+/**  
+* @ClassName: countWord  
+* @Description: TODO
+* @author 小豪  
+* @date 2018年12月14日  
+*    
+*/
+public class countWord {
+	public static void main(String args[]) {
+		File file = new File("./src/hello.txt");
+		Scanner sc = new Scanner(file);
+		
+	}
+}

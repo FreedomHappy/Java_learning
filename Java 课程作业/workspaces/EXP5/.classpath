@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EXP3"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EXP4"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EXP6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EXP7"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EXPTotal"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
