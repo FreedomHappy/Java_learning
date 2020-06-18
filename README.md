@@ -2,6 +2,8 @@
 java learning
 ## basic
 [Java Platform Standard Edition 8 Documentation](https://docs.oracle.com/javase/8/docs/)
+
+[JavaGuide](https://github.com/Snailclimb/JavaGuide)
 ## open project
 [halo](https://github.com/halo-dev/halo) springboot
 
